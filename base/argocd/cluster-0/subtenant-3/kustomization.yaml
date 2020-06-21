@@ -1,0 +1,3 @@
+resources:
+  - appproject.yaml
+  - sub-3-ns-1-app-1.yaml
