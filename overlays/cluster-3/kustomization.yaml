@@ -1,0 +1,2 @@
+bases:
+  - ../../base/argocd/cluster-3
