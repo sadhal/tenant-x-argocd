@@ -6,6 +6,11 @@ Manage ArgoCD projects and applications.
 
 Follow instructions in https://github.com/sadhal/ns-reconciler with newly created cluster's name.  
 `ns-reconciler` will use cluster's kustomization.yaml found in [overlays](overlays/). Overlay kustomization will point out [bases](bases/). Bases have own kustomization.yaml which includes resources that will be created eg. namespaces, argocd projects, argocd applications etc.  
+Fix RBAC for serviceaccount `system:serviceaccount:argocd:argocd-application-controller`  
+
+```bash
+$ oc adm policy add-cluster-role-to-user edit system:serviceaccount:argocd:argocd-application-controller
+```
 
 #### setup ArgoCD projects
 
