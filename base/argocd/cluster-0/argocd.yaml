@@ -7,7 +7,15 @@ metadata:
     gits.k8s.cluster: cluster-0
 spec:
   server:
-    route: true
+    # route: true
+    route:
+      annotations: {}
+      enabled: false
+      path: /
+      TLS:
+        insecureEdgeTerminationPolicy: Redirect
+        termination: passthrough
+      wildcardPolicy: None
   dex:
     image: quay.io/redhat-cop/dex
     openShiftOAuth: true
