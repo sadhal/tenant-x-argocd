@@ -10,11 +10,11 @@ spec:
     # route: true
     route:
       annotations: {}
-      enabled: false
+      enabled: true
       path: /
-      TLS:
-        insecureEdgeTerminationPolicy: Redirect
-        termination: passthrough
+      # TLS:
+      #   insecureEdgeTerminationPolicy: Redirect
+      #   termination: passthrough
       wildcardPolicy: None
   dex:
     image: quay.io/redhat-cop/dex
