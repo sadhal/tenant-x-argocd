@@ -1,7 +1,7 @@
 resources:
   - appproject.yaml
   - sub-1-ns-1-app-1.yaml
-  - sub-1-ns-1-app-2.yaml
-  - sub-1-ns-1-app-3-helm.yaml
+  # - sub-1-ns-1-app-2.yaml
+  - sub-1-ns-1-app-3-helm-repo.yaml
   - sub-1-ns-1-app-4-helm-chart.yaml
-  - sub-1-ns-2-app-1.yaml
+  # - sub-1-ns-2-app-1.yaml

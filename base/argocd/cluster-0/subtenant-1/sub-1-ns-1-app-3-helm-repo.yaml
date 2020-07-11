@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sub-1-ns-1-app-3-helm
+  name: sub-1-ns-1-app-3-helm-repo
   namespace: argocd
 spec:
   destination:
