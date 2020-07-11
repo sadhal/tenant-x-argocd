@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sub-1-ns-1-app-4-helm-chart
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: subtenant-1-namespace-1
+    server: https://kubernetes.default.svc
+  project: subtenant-1
+  source:
+    chart: mychart-test1
+    helm:
+      valueFiles:
+      - values.yaml
+    repoURL: https://sadmir.se/helm-charts
+    targetRevision: 0.1.2
