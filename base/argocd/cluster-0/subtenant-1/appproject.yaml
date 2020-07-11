@@ -24,3 +24,4 @@ spec:
   sourceRepos:
     - 'https://github.com/sadhal/subtenant-1'
     - 'https://github.com/sadhal/multi-tenancy-team0-api-gw'
+    - 'https://sadmir.se/helm-charts'
