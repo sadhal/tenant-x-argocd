@@ -17,3 +17,7 @@ spec:
       - values.yaml
     repoURL: https://sadmir.se/helm-charts
     targetRevision: 0.1.2
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
