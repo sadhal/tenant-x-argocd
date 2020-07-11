@@ -11,12 +11,12 @@ spec:
     server: https://kubernetes.default.svc
   project: subtenant-1
   source:
-    chart: nodejs-ex-k
+    chart: stable/mysql
     helm:
       valueFiles:
       - values.yaml
-    repoURL: https://redhat-developer.github.com/redhat-helm-charts
-    targetRevision: 0.2.0
+    repoURL: https://kubernetes-charts.storage.googleapis.com
+    targetRevision: 1.6.6
   syncPolicy:
     automated:
       prune: true

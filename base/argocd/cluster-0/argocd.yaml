@@ -47,4 +47,6 @@ spec:
       url: https://charts.bitnami.com/bitnami
     - type: helm
       url: https://redhat-developer.github.com/redhat-helm-charts
+    - type: helm
+      url: https://kubernetes-charts.storage.googleapis.com
 

@@ -27,3 +27,4 @@ spec:
     - 'https://sadmir.se/helm-charts'
     - 'https://charts.bitnami.com/bitnami'
     - 'https://redhat-developer.github.com/redhat-helm-charts'
+    - 'https://kubernetes-charts.storage.googleapis.com'
