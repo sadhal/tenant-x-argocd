@@ -11,12 +11,12 @@ spec:
     server: https://kubernetes.default.svc
   project: subtenant-1
   source:
-    chart: mychart-test1
+    chart: redis
     helm:
       valueFiles:
       - values.yaml
-    repoURL: https://sadmir.se/helm-charts
-    targetRevision: 0.1.2
+    repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 10.7.11
   syncPolicy:
     automated:
       prune: true
