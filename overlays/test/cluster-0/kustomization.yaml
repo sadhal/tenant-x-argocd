@@ -1,2 +1,2 @@
 bases:
-  - ../../base/argocd/test/cluster-0
+  - ../../../base/argocd/test/cluster-0

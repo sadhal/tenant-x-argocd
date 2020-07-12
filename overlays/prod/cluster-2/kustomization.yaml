@@ -1,2 +1,2 @@
 bases:
-  - ../../base/argocd/prod/cluster-2
+  - ../../../base/argocd/prod/cluster-2
