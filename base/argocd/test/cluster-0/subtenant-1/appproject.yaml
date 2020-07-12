@@ -6,11 +6,11 @@ metadata:
 spec:
   description: applications for subtenant-1
   destinations:
-    - namespace: subtenant-1-namespace-1
+    - namespace: subtenant-1-namespace-1-staging
       server: 'https://kubernetes.default.svc'
-    - namespace: subtenant-1-namespace-2
+    - namespace: subtenant-1-namespace-2-staging
       server: 'https://kubernetes.default.svc'
-    - namespace: subtenant-1-namespace-3
+    - namespace: subtenant-1-namespace-3-staging
       server: 'https://kubernetes.default.svc'
   roles:
     - description: some description of role for my CICD jobs

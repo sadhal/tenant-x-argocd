@@ -1,0 +1,2 @@
+bases:
+  - ../../base/argocd/prod/cluster-3

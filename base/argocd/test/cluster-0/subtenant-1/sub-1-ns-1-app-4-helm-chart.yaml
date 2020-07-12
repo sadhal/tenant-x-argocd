@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sub-1-ns-1-app-4-helm-chart
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: subtenant-1-namespace-1-staging
+    server: https://kubernetes.default.svc
+  project: subtenant-1
+  source:
+    chart: mysql
+    helm:
+      valueFiles:
+      - values.yaml
+    repoURL: https://kubernetes-charts.storage.googleapis.com
+    targetRevision: 1.6.6
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: sub-1-ns-1-app-2
+  name: sub-1-ns-1-app-1
   namespace: argocd
 spec:
   destination:
@@ -9,9 +9,9 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: subtenant-1
   source:
-    path: workloads/namespace-1/app-2
+    path: workloads/namespace-1/app-1
     repoURL: 'https://github.com/sadhal/subtenant-1'
-    targetRevision: HEAD
+    targetRevision: master
   syncPolicy:
     automated:
       prune: true

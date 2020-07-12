@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sub-1-ns-1-app-3-helm-repo
+  namespace: argocd
+spec:
+  destination:
+    namespace: subtenant-1-namespace-1-staging
+    server: https://kubernetes.default.svc
+  project: subtenant-1
+  source:
+    helm:
+      valueFiles:
+      - values.yaml
+    path: workloads/namespace-1/app-3
+    repoURL: https://github.com/sadhal/subtenant-1
+    targetRevision: staging
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
